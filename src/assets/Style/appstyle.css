@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.heading{
+  color: #007bff;
+  font-weight: 800;
+  
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Beautiful gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.app-container img {
+  max-width: 80%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeInImage 1.5s ease-in-out forwards;
+}
+
+.app-container label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.app-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.app-container input:focus {
+  border-color: #ff7e5f;
+  outline: none;
+}
+
+.app-container button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.app-container button.generate {
+  background-color: #28a745;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.app-container button.generate:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+.app-container button.download {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.app-container button.download:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInImage {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
